@@ -6,17 +6,6 @@ localStorage: 브라우저를 닫아도 데이터 유지됨
 
 e.target.selectionStart;
 
-```js
-document.getElementById("test").addEventListener(
-  "keydown",
-  function select(e) {
-    var position = e.target.selectionStart;
-    console.log(position);
-  },
-  false
-);
-```
-
 ### 페이지 나누기
 
 1. 방만들기/닉네임 입력 -> root
@@ -28,7 +17,6 @@ document.getElementById("test").addEventListener(
 1. 새로운 유저의 정보 저장
 2. 새로운 유저 알림, 유저 목록에 이름, 커서용 닉네임 만들기
 3. 마지막 글자에 포커스 해주고 해당 위치 읽어서 저장
-4. (할까?) 퇴장했을때 알려주기?
 
 ### 텍스트 입력(키보드 다운)
 

@@ -1,0 +1,35 @@
+#home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#makeRoomButton {
+  padding: 8px 24px;
+}
+
+#nicknameWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nicknameTitle {
+  margin-bottom: 16px;
+}
+
+#nicknameInputWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#nicknameInput {
+  padding: 8px;
+}
+
+#enterButton {
+  margin-top: 16px;
+  padding: 8px 24px;
+}
