@@ -60,7 +60,7 @@ export const getCursorXY = (textarea) => {
     x: inputX + spanX,
     y: inputY + spanY,
   };
-  console.log(x, y, "Xy");
+
   const {
     offsetLeft,
     offsetTop,
@@ -69,20 +69,14 @@ export const getCursorXY = (textarea) => {
     scrollLeft,
     scrollTop,
   } = textarea;
-  // get style property values that we are interested in
-  const { lineHeight, paddingRight } = getComputedStyle(textarea);
-  console.log(lineHeight, paddingRight, "lineHeight,paddingRight");
-  // get the cursor X and Y from our helper function
 
-  // set the marker positioning
-  // for the left positioning we ensure that the maximum left position is the width of the input minus the right padding using Math.min
-  // we also account for current scroll position of the input
+  const { lineHeight, paddingRight } = getComputedStyle(textarea);
+
   const left = Math.min(
     x - scrollLeft,
     offsetLeft + offsetWidth - parseInt(paddingRight, 10)
   );
-  // for the top positioning we ensure that the maximum top position is the height of the input minus line height
-  // we also account for current scroll position of the input
+
   const top = Math.min(
     y - scrollTop,
     offsetTop +
@@ -90,6 +84,5 @@ export const getCursorXY = (textarea) => {
       parseInt(typeof lineHeight === "number" ? lineHeight : 1.2, 10)
   );
 
-  // document.body.removeChild(div);
   return { left, top };
 };

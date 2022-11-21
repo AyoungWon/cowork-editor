@@ -47,4 +47,6 @@ export default function Editor($root) {
       { once: true }
     );
   };
+
+  this.init();
 }

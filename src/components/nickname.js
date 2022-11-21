@@ -1,7 +1,6 @@
-import Event from "../event.js";
-import { getUserList, getNewUserList } from "../utils.js";
+import { getUserList } from "../utils.js";
 import { routeChange } from "../router.js";
-import { USER_LIST, USER_INFO, NEW_USER_LIST } from "../constant.js";
+import { USER_LIST, USER_INFO } from "../constant.js";
 
 export default function NickName($parent) {
   this.state = "";

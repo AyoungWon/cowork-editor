@@ -12,7 +12,7 @@ export default function UserList($parent, userList) {
   this.render = () => {
     this.state.userList = getUserList();
     $userList.innerHTML = `
-    <h3>참여자 목록</h3>
+    <h3 style="margin-bottom:24px">참여자 목록</h3>
     <ul>${this.state.userList
       .map(
         (userInfo) =>
