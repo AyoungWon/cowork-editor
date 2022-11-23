@@ -1,10 +1,17 @@
+### 실행방법
+
+1. `yarn` or `npm install`
+2. `yarn dev` or `npm run dev`
+3. http://localhost:3000/
+
 ### 데이터 저장할 곳
 
-localStorage: 브라우저를 닫아도 데이터 유지됨
+1. localStorage: 브라우저를 닫아도 데이터 유지됨
 
-### 커서 위치 확인하기
+### 커서 위치
 
-e.target.selectionStart;
+1. e.target.selectionStart;
+2. 안 보이는 공간에 textarea 렌더링 후 위치 확인
 
 ### 페이지 나누기
 
@@ -26,4 +33,3 @@ e.target.selectionStart;
 ### 커서 클릭
 
 1. 커서 위치 변경 저장
-
